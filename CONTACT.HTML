@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Elgon FM 95.4</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background-contact.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        header {
+            background: rgba(0, 123, 255, 0.8);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: rgba(0, 86, 179, 0.8);
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            backdrop-filter: blur(10px);
+        }
+        .contact-info {
+            background: rgba(23, 105, 237, 0.9);
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        form {
+            width: 100%;
+            background: rgb(101, 103, 255);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background: #007BFF;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #0056b3;
+        }
+        footer {
+            background: rgba(0, 86, 179, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Elgon FM 95.4 - Kapchorwa, Uganda</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="news.html">News</a>
+    <a href="gallery.html">Entertainment</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+<main>
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p><font color="orange" size="5">If you have any questions or feedback, feel free to reach out!</font></p>
+        <p><strong>Phone:</strong> +256 773424219</p>
+        <p><strong>Email:</strong> info@elgonfm.com</p>
+        For inquiries and business
+
+Call +256776042121 or +256701371616 or +256789100704
+    </div>
+
+    <h3>Send us a message</h3>
+    <form onsubmit="alert('Your message has been sent!'); return false;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" required></textarea>
+        
+        <button type="submit">Send Message</button>
+    </form>
+</main>
+
+<footer>
+        <p>&copy; 2025 Elgon FM 95.4 - All Rights Reserved. Developed by CKS <a href="mailto:kephache55@gmail.com">click </a>here to contact us for more websites</p>
+</footer>
+</body>
+</html>
