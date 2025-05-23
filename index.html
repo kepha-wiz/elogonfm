@@ -6,6 +6,24 @@
     <title>Elgon Radio Kapchorwa 95.4</title>
     <link rel="stylesheet" href="style.css">
     <style>/* ====== RESET & BASE ====== */
+        @media (max-width: 700px) {
+    #sidebar {
+        position: static !important;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1.2rem;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+        border-radius: 0.7rem;
+        padding: 1rem 0.5rem;
+        min-width: 0;
+        z-index: auto;
+    }
+    #container {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0.7rem 1vw;
+    }
+}
 * {
     box-sizing: border-box;
     margin: 0;
