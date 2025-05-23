@@ -4,89 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Elgon FM 95.4</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url('background-contact.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: #333;
-        }
-        header {
-            background: rgba(0, 123, 255, 0.8);
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        nav {
-            background: rgba(0, 86, 179, 0.8);
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        main {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            backdrop-filter: blur(10px);
-        }
-        .contact-info {
-            background: rgba(23, 105, 237, 0.9);
-            color: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            width: 80%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-        form {
-            width: 100%;
-            background: rgb(101, 103, 255);
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        form label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        form button {
-            background: #007BFF;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        form button:hover {
-            background: #0056b3;
-        }
-        footer {
-            background: rgba(0, 86, 179, 0.8);
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link rel="stylesheet" href="contact.css">
+    <style>body {
+    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #0f2027 0%, #2c5364 100%), url('background-contact.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #222;
+    min-height: 100vh;
+    letter-spacing: 0.01em;
+}
+
+header {
+    background: linear-gradient(90deg, #007BFF 0%, #00c6ff 100%);
+    color: #fff;
+    padding: 2.2rem 1rem 1.2rem 1rem;
+    text-align: center;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    box-shadow: 0 6px 32px 0 rgba(0,0,0,0.13);
+}
+header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+nav {
+    background: rgba(0, 123, 255, 0.93);
+    padding: 0.8rem 0;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border-radius: 0 0 1.2rem 1.2rem;
+    margin-bottom: 2rem;
+}
+nav a {
+    color: #fff;
+    margin: 0 1.2rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.08rem;
+    letter-spacing: 0.7px;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.5rem;
+    transition: background 0.18s, color 0.18s;
+    position: relative;
+}
+nav a:hover, nav a:focus {
+    background: #ffe066;
+    color: #007BFF;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+main {
+    padding: 2.5rem 0.5rem 2rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 70vh;
+}
+
+h2, h3 {
+    color: #007BFF;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    letter-spacing: 0.5px;
+}
+
+.contact-info {
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    color: #232323;
+    border-radius: 1.2rem;
+    padding: 2rem 2.5rem;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+    margin-bottom: 2.2rem;
+    font-size: 1.13rem;
+    line-height: 1.7;
+}
+.contact-info font {
+    color: orange;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    background: #fff;
+    border-radius: 1.2rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+form label {
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    color: #007BFF;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border: 1.5px solid #e0eafc;
+    border-radius: 0.5rem;
+    font-size: 1.08rem;
+    background: #f7fafd;
+    transition: border 0.18s;
+}
+form input:focus, form textarea:focus {
+    border: 1.5px solid #007BFF;
+    outline: none;
+    background: #e0eafc;
+}
+form button {
+    background: linear-gradient(90deg, #007BFF 0%, #00c6ff 100%);
+    color: #fff;
+    padding: 0.8rem 1.7rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.13rem;
+    font-weight: 700;
+    transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+form button:hover {
+    background: linear-gradient(90deg, #ffe066 0%, #00c6ff 100%);
+    color: #007BFF;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+
+footer {
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 1rem 0.7rem 1rem;
+    font-size: 1.08rem;
+    margin-top: 2.5rem;
+    border-radius: 1.2rem 1.2rem 0 0;
+    box-shadow: 0 -2px 16px rgba(0,0,0,0.13);
+}
+footer a {
+    color: #ffe066;
+    text-decoration: underline;
+    font-weight: 600;
+}
+footer a:hover {
+    color: #00c6ff;
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+    nav a {
+        margin: 0 0.5rem;
+        font-size: 0.97rem;
+    }
+    .contact-info, form {
+        padding: 1.2rem 0.7rem;
+        max-width: 98vw;
+    }
+    main {
+        padding: 1.2rem 0.2rem 1rem 0.2rem;
+    }
+}
+@media (max-width: 480px) {
+    header {
+        padding: 1rem 0.2rem 0.7rem 0.2rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    .contact-info, form {
+        padding: 0.7rem 0.2rem;
+    }
+    h2, h3 {
+        font-size: 1.1rem;
+    }
+    footer {
+        font-size: 0.97rem;
+        padding: 0.7rem 0.2rem 0.4rem 0.2rem;
+    }
+}</style>
 </head>
 <body>
 
@@ -104,12 +213,11 @@
 <main>
     <h2>Contact Us</h2>
     <div class="contact-info">
-        <p><font color="orange" size="5">If you have any questions or feedback, feel free to reach out!</font></p>
+        <p><span style="color:orange;font-size:1.15em;font-weight:700;">If you have any questions or feedback, feel free to reach out!</span></p>
         <p><strong>Phone:</strong> +256 773424219</p>
         <p><strong>Email:</strong> info@elgonfm.com</p>
-        For inquiries and business
-
-Call +256776042121 or +256701371616 or +256789100704
+        <p>For inquiries and business:<br>
+        Call +256776042121 or +256701371616 or +256789100704</p>
     </div>
 
     <h3>Send us a message</h3>
@@ -128,7 +236,7 @@ Call +256776042121 or +256701371616 or +256789100704
 </main>
 
 <footer>
-        <p>&copy; 2025 Elgon FM 95.4 - All Rights Reserved. Developed by CKS <a href="mailto:kephache55@gmail.com">click </a>here to contact us for more websites</p>
+    <p>&copy; 2025 Elgon FM 95.4 - All Rights Reserved. Developed by CKS <a href="mailto:kephache55@gmail.com">click here</a> to contact us for more websites</p>
 </footer>
 </body>
 </html>
